@@ -3,7 +3,7 @@ main{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ee3925;
+    background: linear-gradient(142deg, rgba(238,57,37,1) 0%, rgba(238,37,37,1) 35%, rgba(255,181,0,1) 100%);
 }
 
 img{
@@ -45,7 +45,7 @@ img{
 
 .login .cadastro{
     position: relative;
-    top: 45px;
+    top: 40px;
 }
 
 .login .title{
@@ -54,12 +54,10 @@ img{
     font-weight: bold;
 }
 
-.cadastro i{
+a{
     font-size: 11px;
-}
-
-.inputs .password{
-    font-size: 10px;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 button{

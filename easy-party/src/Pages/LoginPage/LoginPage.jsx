@@ -1,4 +1,4 @@
-// eslint-disable-line
+/*eslint-disable*/
 import React from "react";
 import "./LoginPage.css";
 import image from "../../Images/icon.png";
@@ -23,13 +23,13 @@ export default function LoginPage() {
             <input type="password" placeholder="Senha" />
           </div>
 
-          <i className="password">Esqueci minha senha</i>
+          <a>Esqueci minha senha</a>
 
           <button>Entrar</button>
         </div>
 
         <div className="cadastro">
-          <i>Não é membro? Cadastre-se aqui</i>
+          <a>Não é membro? Cadastre-se aqui</a>
         </div>
       </div>
     </main>
