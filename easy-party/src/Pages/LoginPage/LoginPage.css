@@ -1,0 +1,73 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ee3925;
+}
+
+img{
+    width: 25%;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px   ;
+    background-color: white;
+    border-radius: 10px;
+    width: 220px;
+    height: 320px;
+}
+.login .inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.login input{
+    border: 0px;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.login .inputs div{
+    display: flex;
+    background-color: white;
+    font-size: 1rem;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.login .cadastro{
+    position: relative;
+    top: 45px;
+}
+
+.login .title{
+    position: relative;
+    bottom: 40px;
+    font-weight: bold;
+}
+
+.cadastro i{
+    font-size: 11px;
+}
+
+.inputs .password{
+    font-size: 10px;
+}
+
+button{
+    background-color: #ee3925;
+    border: 0px;
+    color: white;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
