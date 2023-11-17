@@ -3,7 +3,7 @@ main{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(142deg, rgba(238,57,37,1) 0%, rgba(238,37,37,1) 35%, rgba(255,181,0,1) 100%);
+    background: linear-gradient(150deg, rgba(238,37,37,1) 0%, rgba(253,187,45,1) 100%);
 }
 
 img{
@@ -50,7 +50,7 @@ img{
 
 .login .title{
     position: relative;
-    bottom: 40px;
+    bottom: 30px;
     font-weight: bold;
 }
 
