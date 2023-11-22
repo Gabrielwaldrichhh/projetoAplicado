@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Index from './Pages/PageMap/Index' 
+import Index from './Pages/Index/Index' 
 import './index.css';
 
 import reportWebVitals from './reportWebVitals';
