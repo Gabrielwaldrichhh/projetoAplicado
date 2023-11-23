@@ -1,0 +1,28 @@
+.search-bar {
+    position: relative;
+    background: linear-gradient(90deg, rgba(238,37,37,1) 88%, rgba(253,187,45,1) 100%);
+    width: 250px;
+    height: 30px;
+    top: 10px;
+    left: 1%;
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0;
+}
+
+.search-bar .search{
+    border: none;
+    width: 195px;
+    height: 95%;
+    outline: none;
+    border-radius: 10px 0 0 10px;
+    padding-left: 20px;
+}
+
+.search-bar i{
+    font-size: 1.3rem;
+    color: #f6f6f9;
+    padding-right: 5px;
+}

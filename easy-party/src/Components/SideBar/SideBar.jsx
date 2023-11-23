@@ -31,7 +31,7 @@ export default function Sidebar() {
                     <span>
                         <a href="">Gabriel Waldrich</a>
                         <i class='bx bx-cog'>Configurações</i>
-                        </span>
+                    </span>
                 </div>
                 <i class='bx bx-log-out' ></i>
             </div>
