@@ -28,7 +28,10 @@ export default function Sidebar() {
             <div className="sidebar-bottom">
                 <div className="user">
                     <img src={user} alt="" />
-                    <span>Gabriel Waldrich</span>
+                    <span>
+                        <a href="">Gabriel Waldrich</a>
+                        <i class='bx bx-cog'>Configurações</i>
+                        </span>
                 </div>
                 <i class='bx bx-log-out' ></i>
             </div>
