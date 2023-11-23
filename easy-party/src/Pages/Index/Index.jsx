@@ -4,7 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import Sidebar from '../../Components/SideBar/SideBar';
 import iconUrl from '../../Images/teste1.png';
-import AddEventPage from './AddEventPage.jsx';
+import AddEventPage from '../AddEvent/AddEventPage.jsx';
 
 const Index = () => {
   const mapRef = useRef(null);
