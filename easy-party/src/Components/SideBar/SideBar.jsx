@@ -1,33 +1,37 @@
 import logo from "../../Images/icon.png"
+import { useState } from "react";
 import "./SideBar.css"
+import user from "../../Images/user.jfif"
 
 /* eslint-disable */
 export default function Sidebar() {
+    const [isSidebarClosed, setSidebarClosed] = useState(true);
+
+    const toggleSidebar = () => {
+        setSidebarClosed(!isSidebarClosed);
+    };
+
+    const sidebarClass = `sidenav ${isSidebarClosed ? 'close' : ''}`;
+
     return (
-        <div className="sidenav">
+        <div className={sidebarClass}>
+            <div className="sidebar-top">
+                <a href="" className="logo">
+                    <img src={logo} alt="" />
+                    <div className="logo-name"><span>Easy</span>Party</div>
+                </a>
+                <i class='bx bx-menu' onClick={toggleSidebar}></i>
+            </div>
 
-            <a href="" className="logo">
-                <img src={logo} alt="" />
-                <div className="logo-name"><span>Easy</span>Party</div>
-            </a>
-            
-            <ul>
-                <li>
-                    <a href=""> <i class='bx bxs-dashboard'></i> Home</a>
-                </li>
+            <div className="sidebar-mid"></div>
 
-                <li>
-                    <a href=""> <i class='bx bxs-cog' ></i> Opção 1</a>
-                </li>
-
-                <li>
-                    <a href=""> <i class='bx bxs-cog' ></i> Opção 2</a>
-                </li>
-
-                <li>
-                    <a href=""> <i class='bx bxs-cog' ></i> Opção 3</a>
-                </li>
-            </ul>
+            <div className="sidebar-bottom">
+                <div className="user">
+                    <img src={user} alt="" />
+                    <span>Gabriel Waldrich</span>
+                </div>
+                <i class='bx bx-log-out' ></i>
+            </div>
         </div>
     )
 }

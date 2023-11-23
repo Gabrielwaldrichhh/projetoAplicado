@@ -1,4 +1,4 @@
-.sidenav{
+.sidenav {
     position: fixed;
     top: 0;
     left: 0;
@@ -10,37 +10,7 @@
     transition: all 0.3s ease;
 }
 
-ul{
-    padding: 0;
-}
-
-ul li{
-    list-style: none;
-    margin: 15px 0;
-}
-
-ul li a{
-    color: var(--dark);
-    text-decoration: none;
-    font-size: 16px;   
-    padding: 8px 15px;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-ul li a:hover,
-ul li a.active {
-    background-color: var(--primary);
-    color: var(--light);
-}
-
-ul li a i{
-    font-size: 1.6rem;
-}
-
-.sidenav .logo{
+.sidenav .logo {
     font-size: 24px;
     font-weight: 700;
     height: 56px;
@@ -54,12 +24,78 @@ ul li a i{
     justify-content: center;
 }
 
-.sidenav .logo .logo-name span{
+.sidenav .logo .logo-name span {
     color: var(--dark);
 }
 
-.sidenav .logo img{
+.sidenav .logo img {
     width: 34px;
     display: flex;
     justify-content: center;
+}
+
+.sidebar-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar-top i {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 0 0 3px 20px;
+    cursor: pointer;
+}
+
+.close{
+    width: 60px;
+}
+
+.close .sidebar-top .logo{
+    display: none;
+}
+
+.close .sidebar-top i{
+    padding: 20px 0;
+}
+
+.sidebar-bottom{
+    background: linear-gradient(150deg, rgba(238,37,37,1) 0%, rgba(253,187,45,1) 100%);
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-bottom .user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+    color: var(--light);
+}
+.sidebar-bottom .user img{
+    width: 40px;
+    border-radius: 40px;
+}
+
+.sidebar-bottom i{
+    padding-right: 10px;
+    font-size: 1.6rem;
+    color: var(--primary);
+}
+
+.close .sidebar-bottom .user span,
+.close .sidebar-bottom i{
+    display: none;
+}
+
+.close .sidebar-bottom .user img{
+    padding: 10px;
 }

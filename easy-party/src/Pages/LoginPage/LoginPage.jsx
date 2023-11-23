@@ -2,10 +2,11 @@
 import React from "react";
 import "./LoginPage.css";
 import image from "../../Images/icon.png";
+import { Link } from "react-router-dom";
 
 export default function LoginPage() {
   return (
-    <main>
+    <main className="main">
       <div className="login">
         <div className="title">
           <img src={image} />
@@ -25,7 +26,7 @@ export default function LoginPage() {
 
           <a>Esqueci minha senha</a>
 
-          <button>Entrar</button>
+          <Link to="/home" className="button"><button>Entrar</button></Link>
         </div>
 
         <div className="cadastro">

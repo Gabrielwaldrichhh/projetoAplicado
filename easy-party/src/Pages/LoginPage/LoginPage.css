@@ -1,4 +1,4 @@
-main{
+.main{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +45,7 @@ img{
 
 .login .cadastro{
     position: relative;
-    top: 40px;
+    top: 30px;
 }
 
 .login .title{
@@ -60,11 +60,11 @@ a{
     text-decoration: underline;
 }
 
-button{
+.button,button{
     background-color: #ee3925;
     border: 0px;
     color: white;
-    padding: 5px;
+    padding: 4px;
     font-size: 1rem;
     border-radius: 10px;
     cursor: pointer;
