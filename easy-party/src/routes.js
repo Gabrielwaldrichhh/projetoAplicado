@@ -1,7 +1,7 @@
 import {createBrowserRouter} from 'react-router-dom';
 
 import LoginPage from './Pages/LoginPage/LoginPage';
-import Index from './Pages/Index/Index';
+import Index from './Pages/Index/AddEventPage';
 
 const routes = createBrowserRouter([
     {
