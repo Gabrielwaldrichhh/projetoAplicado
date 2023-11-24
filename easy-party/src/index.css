@@ -22,3 +22,25 @@ body{
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+.dialog-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.dialog-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.dialog-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.dialog-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 300ms, transform 300ms;
+}

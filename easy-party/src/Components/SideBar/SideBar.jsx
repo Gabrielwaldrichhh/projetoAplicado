@@ -1,3 +1,4 @@
+import React from "react"
 import logo from "../../Images/icon.png"
 import { useState } from "react";
 import "./SideBar.css"
