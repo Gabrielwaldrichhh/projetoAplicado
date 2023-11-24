@@ -10,7 +10,7 @@ export default function LoginPage() {
       <div className="login">
         <div className="title">
           <img src={image} />
-          <p>EasyParty</p>
+          <label>EasyParty</label>
         </div>
 
         <div className="inputs">

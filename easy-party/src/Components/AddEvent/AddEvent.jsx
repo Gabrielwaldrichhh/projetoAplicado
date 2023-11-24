@@ -39,7 +39,7 @@ export default function AddEvent() {
 
                         <input type="text" placeholder="Digite o nome do evento" />
                         <input type="date" placeholder="Informe a data inicial" />
-                        <input type="text" placeholder="Informe a data final" />
+                        <input type="date" placeholder="Informe a data final" />
                         <input type="text" placeholder="Informe a faxetaria" />
                         <input type="text" placeholder="Tipo de evento" />
 

@@ -45,10 +45,14 @@ img{
 
 .login .cadastro{
     position: relative;
-    top: 30px;
+    top: 50px;
 }
 
 .login .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
     bottom: 30px;
     font-weight: bold;
@@ -68,4 +72,5 @@ a{
     font-size: 1rem;
     border-radius: 10px;
     cursor: pointer;
+    text-decoration: none;
 }
