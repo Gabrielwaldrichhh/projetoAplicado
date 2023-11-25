@@ -14,6 +14,8 @@
   --success: #388E3C;
   --light-success: #BBF7D0;
   --background: linear-gradient(150deg, rgba(238, 37, 37, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  --blu:#38848E;
+  --heart:#8E3838;
 }
 
 body{
@@ -23,24 +25,3 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
-.dialog-enter {
-  opacity: 0;
-  transform: translateX(-100%);
-}
-
-.dialog-enter-active {
-  opacity: 1;
-  transform: translateX(0);
-  transition: opacity 300ms, transform 300ms;
-}
-
-.dialog-exit {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.dialog-exit-active {
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 300ms, transform 300ms;
-}

@@ -23,6 +23,7 @@
     padding-top: 6px;
     justify-content: center;
     padding-left: 10px;
+    text-decoration: none;
 }
 
 .sidenav .logo .logo-name span {
@@ -63,10 +64,6 @@
     padding: 20px 0;
 }
 
-.sidebar-mid{
-    flex: 1;
-}
-
 .sidebar-bottom {
     background: var(--background);
     width: 100%;
@@ -89,17 +86,18 @@
     gap: 10px;
 }
 
-.sidebar-bottom .user span{
+.sidebar-bottom .user span {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
 .sidebar-bottom .user span a,
-.sidebar-bottom .user span i{
+.sidebar-bottom .user span i {
     text-decoration: none;
     color: var(--light);
 }
+
 .sidebar-bottom .user img {
     width: 40px;
     border-radius: 40px;
@@ -108,8 +106,7 @@
 .sidebar-bottom .bx-log-out {
     padding-right: 10px;
     font-size: 1.6rem;
-    color: #930D0D;
-    font-weight: bold;
+    color: #FF0000;
 }
 
 .close .sidebar-bottom .user span,
@@ -122,4 +119,53 @@
     justify-content: center;
     align-items: center;
     margin-left: 1.5px;
+}
+
+.sidebar-mid {
+    flex: 1;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.close .sidebar-mid span{
+    display: none;
+}
+.sidebar-mid ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.sidebar-mid ul li{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 5px;
+    color: var(--dark);
+    height: 28px;
+    background: transparent;
+    margin-left: 6px;
+    border-radius: 28px 0 0 28px;
+    padding: 4px;
+}
+
+.sidebar-mid ul li.action{
+    background: var(--dark-grey);
+    position: relative;
+    color: var(--light);
+}
+
+.sidebar-mid ul .bx{
+    font-size: 1.7rem;
+}
+
+.close .sidebar-mid li{
+    width: 28px;
+    border-radius: 100%;
 }
