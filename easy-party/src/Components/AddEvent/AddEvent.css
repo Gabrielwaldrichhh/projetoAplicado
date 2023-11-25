@@ -7,6 +7,7 @@
     position: absolute;
     right: 10px;
     bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .add-event {
@@ -37,14 +38,57 @@
 
 .event-form {
     background: var(--light);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    gap: 10px;
-    transition: all 0.3s ease;
-    border-radius: 15px;
+    align-items: center;
+    padding: 10px;
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.form{
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-top: -20px;
+}
+
+.event-form section{
+    display: flex;
+    flex-direction: column;
+}
+
+.event-form button{
+
+}
+
+.event-form section input,
+.event-form section select{
+    position: relative;
+    height: 30px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+
+} 
+.event-form section label{
+    margin-top: 8px;
+}
+.select-form{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
 }
 
 .close-icon {
@@ -62,12 +106,15 @@
     border-radius: 50%;
 }
 
-.send{
-    background: var(--background);
-    border: 0px;
-    color: white;
-    padding: 4px;
-    font-size: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
+.button-form{
+ height:40px;
+ width: 30%;
+ color: var(--light);
+ font-size: 1rem;
+ font-weight: 400;
+ border: none;
+ margin-top: 8px;
+ cursor: pointer;
+ border-radius: 6px;
+ background:var(--primary);
 }

@@ -1,0 +1,45 @@
+.toggle-theme{
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  z-index: 2000;
+  height: 25px;
+  border-radius: 25px;
+  width: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  background-color: white;
+}
+.sun-moon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+.toggle-theme .theme-toggle{
+    display: block;
+    max-width: 50px;
+    height: 25px;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    border-radius: 25px;
+}
+
+.toggle-theme .theme-toggle::before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: calc(25px - 4px);
+    background:var(--background);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.toggle-theme #theme-toggle:checked+.theme-toggle::before{
+    left: calc(-100% - (-25px + -4px));
+}

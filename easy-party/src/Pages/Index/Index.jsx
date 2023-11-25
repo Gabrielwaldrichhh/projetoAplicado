@@ -4,6 +4,7 @@ import L from 'leaflet';
 import Sidebar from '../../Components/SideBar/SideBar';
 import SearchBar from '../../Components/SearchBar/SearchBar';
 import AddEvent from '../../Components/AddEvent/AddEvent';
+import ToggleTheme from '../../Components/ToggleTheme/ToggleTheme';
 
 import "./Index.css"
 
@@ -28,6 +29,7 @@ const Index = () => {
         <Sidebar />
         <SearchBar />
         <AddEvent/>
+        <ToggleTheme/>
       </div>
       <div id="map" style={{ height: '100vh' }}></div>
     </main>

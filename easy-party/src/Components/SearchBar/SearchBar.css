@@ -4,6 +4,7 @@
     height: 33px;
     top: 15px;
     left: 3%;
+    
 }
 
 .search-bar input {
@@ -15,6 +16,7 @@
     border-radius: 36px 0 0 36px;
     outline: none;
     color: var(--dark);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .search-bar button {
