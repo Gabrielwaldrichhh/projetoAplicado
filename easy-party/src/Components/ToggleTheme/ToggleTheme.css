@@ -18,6 +18,10 @@
     padding: 5px;
     font-size: 16px;
 }
+
+.sun-moon i{
+    font-weight: 300;
+}
 .toggle-theme .theme-toggle{
     display: block;
     max-width: 50px;

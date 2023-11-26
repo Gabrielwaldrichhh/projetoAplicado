@@ -14,6 +14,7 @@ Modal.setAppElement("#root");
 export default function AddEvent() {
 
     const [modalIsOpen, setOpenModal] = useState(false);
+    const [startDate, setStartDate] = useState(null)
     const [endDate, setEndDate] = useState(null);
 
     function openModal() { setOpenModal(true) }
@@ -50,15 +51,15 @@ export default function AddEvent() {
 
                             <label>Data e Hora Inical do Evento</label>
                             <DatePicker
-                                selected={endDate}
-                                onChange={(date) => setEndDate(date)}
+                                selected={startDate}
+                                onChange={(date) => setStartDate(date)}
                                 showTimeSelect
                                 timeFormat="HH:mm"
                                 timeIntervals={15}
                                 dateFormat="dd/MM/yyyy HH:mm"
                                 className="form-control"
-                                id="endTime"
-                                name="endTime"
+                                id="startTime"
+                                name="startTime"
                                 placeholderText={'dd / mm / aaaa'} 
                                 required
                             />

@@ -96,7 +96,7 @@
 .sidebar-bottom .user span a,
 .sidebar-bottom .user span i {
     text-decoration: none;
-    color: var(--light);
+    color: #f6f6f9;
 }
 
 .sidebar-bottom .user img {
@@ -159,8 +159,9 @@
 .sidebar-mid ul li.action{
     background: var(--dark-grey);
     position: relative;
-    color: var(--light);
+    color: #f6f6f9;
 }
+
 
 .sidebar-mid ul .bx{
     font-size: 1.7rem;

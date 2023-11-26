@@ -16,7 +16,12 @@
     border-radius: 36px 0 0 36px;
     outline: none;
     color: var(--dark);
+    background: var(--light);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.search-bar .search::placeholder{
+    color: var(--dark);
 }
 
 .search-bar button {

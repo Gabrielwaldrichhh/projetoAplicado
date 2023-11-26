@@ -18,6 +18,10 @@
   --heart:#8E3838;
 }
 
+.dark{
+  --light:#363949;
+  --dark:#f6f6f9;
+}
 body{
   margin: 0;
   padding: 0;

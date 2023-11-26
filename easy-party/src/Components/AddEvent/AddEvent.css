@@ -46,6 +46,7 @@
     position: relative;
     border-radius: 5px;
     width: 50%;
+    color: var(--dark);
 }
 
 .form{
@@ -60,10 +61,6 @@
 .event-form section{
     display: flex;
     flex-direction: column;
-}
-
-.event-form button{
-
 }
 
 .event-form section input,
@@ -109,7 +106,7 @@
 .button-form{
  height:40px;
  width: 30%;
- color: var(--light);
+ color: #f6f6f9;
  font-size: 1rem;
  font-weight: 400;
  border: none;
