@@ -43,9 +43,7 @@ export default function AddEvent() {
                     <form action="" className="form">
 
                         <section>
-                            <label>Nome Completo</label>
-                            <input type="text" placeholder="Digite seu nome" />
-
+                            
                             <label>Nome do Evento</label>
                             <input type="text" placeholder="Digite o nome do evento" />
 
