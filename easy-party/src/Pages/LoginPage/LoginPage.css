@@ -48,6 +48,9 @@ img{
     top: 50px;
 }
 
+.login .cadastro .link{
+    color: var(--dark);
+}
 .login .title{
     display: flex;
     flex-direction: column;

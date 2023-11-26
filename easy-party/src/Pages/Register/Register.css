@@ -1,0 +1,82 @@
+.register-form{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background);
+}
+
+.register-form .bx-left-arrow-alt{
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--dark);
+}
+.container {
+    max-width: 400px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  .container header {
+    font-size: 1.5rem;
+    color: var(--dark);
+    font-weight: 500;
+    text-align: center;
+  }
+  .forms{
+    display: flex;
+    
+   
+    flex-direction: column;
+  }
+  .forms .input-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .input-box label {
+    font-size: 12px;
+    color: #333;
+  }
+  .forms :where(.input-box input) {
+    height: 30px;
+    outline: none;
+    font-size: 12px;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+  }
+  .input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  }
+  .forms .column {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .forms .button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .forms .button-container button {
+    height: 40px;
+    width:60%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: var(--background);
+    border-radius: 40px;
+  }
+  .forms button:hover {
+    background: var(--background)
+  }

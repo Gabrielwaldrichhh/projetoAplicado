@@ -30,7 +30,7 @@ export default function LoginPage() {
         </div>
 
         <div className="cadastro">
-          <a>Não é membro? Cadastre-se aqui</a>
+          <Link to="/register" className="link">Não é membro? Cadastre-se aqui</Link>
         </div>
       </div>
     </main>
