@@ -1,6 +1,7 @@
 import React from "react"
 import logo from "../../Images/icon.png"
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./SideBar.css"
 import user from "../../Images/user.jfif"
 
@@ -22,7 +23,7 @@ export default function Sidebar() {
     ];
     return (
         <div className={sidebarClass}>
-            
+
             <div className="sidebar-top">
                 <a href="" className="logo">
                     <img src={logo} alt="" />
@@ -49,7 +50,7 @@ export default function Sidebar() {
                         <a href="">Gabriel Waldrich</a>
                     </span>
                 </div>
-                <i class='bx bx-log-out' ></i>
+                <Link to="/"><i class='bx bx-log-out' ></i></Link>
             </div>
         </div>
     )
