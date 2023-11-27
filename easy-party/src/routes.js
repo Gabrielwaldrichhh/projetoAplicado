@@ -6,7 +6,7 @@ import Register from './Pages/Register/Register';
 
 const routes = createBrowserRouter([
     {
-        path:"/home",
+        path:"/:user/home",
         element:(<Index/>)
     },
     {

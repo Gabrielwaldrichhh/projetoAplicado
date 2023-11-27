@@ -26,7 +26,7 @@ export default function LoginPage() {
 
           <a>Esqueci minha senha</a>
 
-          <Link to="/home" className="button">Entrar</Link>
+          <Link to="/gabriel/home" className="button">Entrar</Link>
         </div>
 
         <div className="cadastro">
