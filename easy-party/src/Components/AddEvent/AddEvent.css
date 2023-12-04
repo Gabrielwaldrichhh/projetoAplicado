@@ -1,144 +1,117 @@
 .add-event {
-  background: var(--background);
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  z-index: 2000;
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: var(--background);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    z-index: 2000;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .add-event {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
-  color: #f6f6f9;
-}
-
-.add-event i {
-  cursor: pointer;
-}
-
-.modal-content {
-  background-color: rgb(0, 0, 0, 0.7);
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 3000;
-}
-
-.event-form {
-  background: var(--light);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  position: relative;
-  border-radius: 5px;
-  width: 50%;
-  color: var(--dark);
-}
-
-.event-form header {
-  font-size: 1.5rem;
-  color: var(--dark);
-  font-weight: 500;
-  text-align: center;
-}
-
-.forms-add-event {
-  display: flex;
-  gap: 30px;
-  width: 100%;
-  justify-content: center;
-}
-
-.forms-add-event .input-box-form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-.input-box-form label {
-  font-size: 12px;
-  color: var(--dark);
-}
-.date-box{
-    width: 85%;
-}
-.forms-add-event :where(.input-box-form input, .select-box) {
-  position: relative;
-  height: 30px;
-  outline: none;
-  font-size: 12px;
-  color: #707070;
-  margin-top: 8px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 0 15px;
-}
-
-.input-box-form input:focus {
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-}
-.forms-add-event .column {
-  display: flex;
-  flex-direction: column;
-  width: 35%;
-}
-
-.select-box{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    font-size: 2.5rem;
+    color: #f6f6f9;
 }
-.select-box select{
+
+.add-event i {
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: rgb(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000;
+}
+
+.event-form {
+    background: var(--light);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    border-radius: 5px;
+    width: 50%;
+    color: var(--dark);
+}
+
+.form{
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-top: -20px;
+}
+
+.event-form section{
+    display: flex;
+    flex-direction: column;
+}
+
+.event-form section input,
+.event-form section select{
+    position: relative;
+    height: 30px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+
+} 
+.event-form section label{
+    margin-top: 8px;
+}
+.select-form{
     height: 100%;
     width: 100%;
     outline: none;
     border: none;
     color: #707070;
-    font-size: 14px;
-    border-radius: 6px;
-}
-.dark .select-box{
-    background-color: #fff;
-}
-.close-icon {
-  cursor: pointer;
-  font-size: 1.3rem;
-  background: var(--background);
-  color: #f6f6f9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: min-content;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  border-radius: 50%;
+    font-size: 1rem;
 }
 
-.button-form {
-  height: 40px;
-  width: 30%;
-  color: #f6f6f9;
-  font-size: 1rem;
-  font-weight: 400;
-  border: none;
-  margin-top: 30px;
-  cursor: pointer;
-  border-radius: 6px;
-  background: var(--background);
+.close-icon {
+    cursor: pointer;
+    font-size: 1.3rem;
+    background: var(--background);
+    color: #f6f6f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min-content;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+}
+
+.button-form{
+ height:40px;
+ width: 30%;
+ color: #f6f6f9;
+ font-size: 1rem;
+ font-weight: 400;
+ border: none;
+ margin-top: 8px;
+ cursor: pointer;
+ border-radius: 6px;
+ background:var(--background);
 }

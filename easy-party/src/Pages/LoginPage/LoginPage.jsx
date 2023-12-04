@@ -75,11 +75,7 @@ const LoginPage = () => {
 
             <button type="submit" className="button">Entrar</button>
           </div>
-
-          <a>Esqueci minha senha</a>
-
-          <Link to="/gabriel/home" className="button">Entrar</Link>
-        </div>
+        </form>
 
         <div className="cadastro">
           <Link to="/register" className="link">Não é membro? Cadastre-se aqui</Link>
