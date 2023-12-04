@@ -77,3 +77,36 @@ a{
     cursor: pointer;
     text-decoration: none;
 }
+
+.error-popup {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 77, 77, 0.95); /* Cor mais harmoniosa */
+    color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    z-index: 9999;
+    text-align: center;
+    animation: fadeInOut 3s ease forwards;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  }
+  
+  .error-popup p {
+    margin-bottom: 12px;
+  }
+  
+  .error-popup button {
+    background-color: #ff4d4d; /* Cor do botão */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave */
+  }
+  
+  .error-popup button:hover {
+    background-color: #ff6666; /* Cor do botão ao passar o mouse */
+  }
