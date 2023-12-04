@@ -34,7 +34,7 @@ const LoginPage = () => {
   
     } catch (error) {
       console.error('Erro ao enviar dados de login:', error.message);
-      setError(error.message);
+      setError('Erro ao enviar dados de login');
       setTimeout(() => {
         setError(null); // Esconde o erro após 3 segundos
       }, 3000);
@@ -85,7 +85,6 @@ const LoginPage = () => {
       {error && (
         <div className="error-popup">
           <p>{error}</p>
-          <button onClick={() => setError(null)}>Fechar</button> {/* Botão para fechar o erro */}
         </div>
       )}
     </main>
