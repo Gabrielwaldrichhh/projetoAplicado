@@ -27,8 +27,6 @@
   }
   .forms{
     display: flex;
-    
-   
     flex-direction: column;
   }
   .forms .input-box {
