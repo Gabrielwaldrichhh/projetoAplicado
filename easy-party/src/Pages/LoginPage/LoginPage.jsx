@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import "./LoginPage.css";
 import image from "../../Images/icon.png";
 import { Link } from "react-router-dom";
-import { useHistory } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
-const LoginPage = ({ history }) => {
+const LoginPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
@@ -31,7 +30,7 @@ const LoginPage = ({ history }) => {
       console.log(data);
 
       // Redireciona para a página de home em caso de sucesso
-    navigate("/home");
+    navigate(`/${username}/home`);
   
     } catch (error) {
       console.error('Erro ao enviar dados de login:', error.message);
