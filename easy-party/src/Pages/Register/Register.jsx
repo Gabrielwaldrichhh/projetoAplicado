@@ -25,7 +25,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (senha !== confirmarSenha) {
-      // Senhas não coincidem - trate o erro aqui, se desejar
+      console.error("Senha invalida")
       return;
     }
 

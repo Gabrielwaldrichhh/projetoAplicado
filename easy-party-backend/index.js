@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const loginRoutes = require('./routes/LoginRoutes');
+const eventRoutes = require('./routes/eventRoutes');
 const mysql = require('mysql');
 const cors = require('cors');
 
@@ -33,6 +34,7 @@ app.use(bodyParser.json());
 
 // Rotas de login
 app.use('/api', loginRoutes);
+app.use('/apievent', eventRoutes);
 
 const PORT = 3001;
 app.listen(PORT, () => {
