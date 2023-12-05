@@ -26,3 +26,20 @@ exports.checkLogin = (req, res) => {
     }
   });
 };
+
+exports.registerUser = (req, res) => {
+  const { nome, usuario, telefone, dataNascimento, email, senha } = req.body;
+
+  const INSERT_USER_QUERY = 'INSERT INTO login (nome, usuario, telefone, dataNascimento, email, senha) VALUES (?, ?, ?, ?, ?, ?)';
+  db.query(
+    INSERT_USER_QUERY,
+    [nome, usuario, telefone, dataNascimento, email, senha],
+    (error, results, fields) => {
+      if (error) {
+        console.error('Erro ao cadastrar usuário:', error);
+        return res.status(500).json({ error: 'Erro ao cadastrar usuário' });
+      }
+      return res.status(201).json({ message: 'Usuário cadastrado com sucesso!' });
+    }
+  );
+};

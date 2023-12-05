@@ -10,7 +10,7 @@ const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'root',
-  database: 'projetoAplicado' // Nome do seu banco de dados
+  database: 'projetoAplicado'
 });
 
 // Conexão com o banco de dados
@@ -27,13 +27,12 @@ const corsOptions = {
   allowedHeaders: ['Content-Type', 'Authorization'],
 };
 
-app.use(cors(corsOptions)); // Coloque o middleware CORS antes das rotas
+app.use(cors(corsOptions));
 
-// Middleware para permitir JSON nos corpos das requisições
 app.use(bodyParser.json());
 
 // Rotas de login
-app.use('/api/login', loginRoutes);
+app.use('/api', loginRoutes);
 
 const PORT = 3001;
 app.listen(PORT, () => {
