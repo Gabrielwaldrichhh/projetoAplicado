@@ -23,7 +23,7 @@ const LoginPage = () => {
       });
   
       if (!response.ok) {
-        throw new Error(`Credenciais Inválidas: ${response.statusText}`);
+        throw new Error(`Credenciais Inválidas`);
       }
   
       const data = await response.json();
@@ -85,7 +85,6 @@ const LoginPage = () => {
       {error && (
         <div className="error-popup">
           <p>{error}</p>
-          <button onClick={() => setError(null)}>Fechar</button> {/* Botão para fechar o erro */}
         </div>
       )}
     </main>
